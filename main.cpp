@@ -1,48 +1,4 @@
-#include <iostream>
-#include <bits/stdc++.h>
-#include <vector>
-using namespace std;
-typedef vector<int> V;
 
-void heapify(V&,int,int);
-void insert(V&,int,int);
-int deleteMax(V&,int);
-V heapsort(V,int);
-int extractMin(V&,int);
-
-/*
-For d-ary heaps,
-Children of i-th node are d*i+1 to d*(i+1) nodes
-i = 0,1,2,...
-*/
-
-int main()
-{
-   int d,n,t;
-   cout<<"Enter the order of the d-ary Heap: ";
-   cin>>d;
-   cout<<"Enter the number of values: ";
-   cin>>n;
-   V arr;
-   cout<<"Enter the values"<<endl;
-   for(int i = 0; i < n; i++)
-   {
-      cin>>t;
-      arr.push_back(t);
-   }
-
-   int choice;
-   do
-   {
-      cout<<endl<<"MAIN MENU"<<endl;
-      cout<<"Enter 1 to print elements of d-ary Heap [Level order]"<<endl;
-      cout<<"Enter 2 to insert an element in Heap"<<endl;
-      cout<<"Enter 3 to Heapify"<<endl;
-      cout<<"Enter 4 to perform Heap sort"<<endl;
-      cout<<"Enter 5 to delete the maximum element"<<endl;
-      cout<<"Enter 6 to extract the minimum element"<<endl;
-      cout<<"Enter 0 to exit"<<endl;
-      cout<<"Enter your choice: ";
       cin>>choice;
       switch(choice)
       {
