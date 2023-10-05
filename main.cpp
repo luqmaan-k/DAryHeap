@@ -1,12 +1,4 @@
 
-      cin>>choice;
-      switch(choice)
-      {
-         case 1:
-         {
-            for(int i : arr)
-            {
-               cout<<i<<" ";
             }
             cout<<endl;
             break;
